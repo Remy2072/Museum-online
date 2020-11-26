@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">      
-    
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">         <!--hier link ik het css document aan het  html document-->
-    
-    <title>Lisser Art Museum</title>        <!--dit is de titel van de website-->
+    <title>Lisser Art Museum</title>            <!--dit is de titel van de website-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">     <!--dit is het font-->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />     hier zit het logo boven aan het tab -->
 </head>
 
 <body>
     <div id="header"> 
-    <img alt="logo" src="logo.png">         <!--hier zet ik het logo van de site neer-->
-    <h2 class="taal">Language</h2>
+        <img alt="logo" src="logo.png" onclick="window.location.href='index.html'">         <!--hier zet ik het logo van de site neer-->
+        <div id="contact">                          <!--de balk met language en contat-->
+            <h2 class="taal">Language</h2>    
+            <h2 class="taal">Contact</h2>
+            <div class="menu-btn">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </div>
     </div>
-    <h1> Welkom bij het <br> Lisser Art Museum </h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Over</a>
+            </li>
+            <li>
+                <a href="#">Collectie overzicht</a>
+            </li>
+            <li>
+                <a href="#">Quiz</a>
+            </li>
+        </ul>
+    </nav>
+    <h1> Welkom bij het <br> Lisser Art Museum </h1>        <!--tekst-->
     <div id="cursor"></div>
 
-    <span class="line"></span>
+    <span class="line"></span>                              <!--die witte lijn-->
 
-    <p style="color:rgb(255, 255, 255)"> 
+    <p style="color:rgb(255, 255, 255)">                  <!--tekst-->
         Het LAM is hét foodart museum in de wereld. 
         Gloednieuw en bomvol internationale topstukken.  
         Het LAM is vooral ook een innovatief en  
@@ -29,13 +47,7 @@
         álle leeftijden. Met onze super persoonlijke  
         aanpak krijg je altijd kunstervaring op maat. 
     </p>
-    <button class="rectangle">Tickets</button>
+    <button class="rectangle">Tickets</button>          <!--tickets knop-->
 <script src="main.js"></script>
 </body>
 </html>
-
-
-
-
-
-<!--comment schrijven-->
