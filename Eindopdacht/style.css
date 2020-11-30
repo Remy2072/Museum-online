@@ -8,7 +8,6 @@ img{
 * {
     cursor: none;
 }
-
 body{ 
     font-family: 'Comfortaa', cursive;
     position: relative;
@@ -23,7 +22,6 @@ body{
     box-sizing: border-box;
     overflow: hidden; 
 }
-
 body::before {
     z-index: -1;
     content: '';
@@ -35,7 +33,6 @@ body::before {
     left: 0;
     top: 0;
 }
-
 body::after {
     z-index: -1;
     content: '';
@@ -47,7 +44,6 @@ body::after {
     left: 0;
     top: 0;
 }
-
 h1{
     color:rgb(255, 255, 255);
     font-size: 60px;
@@ -56,7 +52,6 @@ h1{
     margin-left: 40px;
     margin-top: 100px;
 }
-
 .line{
     border-bottom: 2.5px solid rgb(255, 255, 255);
     display: block;
@@ -64,14 +59,12 @@ h1{
     width: 530px;
     margin-left: 40px;
 }
-
 p{
     font-size: 25px;
     margin-left: 40px;
     margin-top: 20px;
     width: 600px;
 }
-
 .rectangle {
     display: inline-block;
     background: #e59441;
@@ -82,8 +75,12 @@ p{
     font-size: 18px;
     border: none;
     color: white;
-  }
-
+}
+.rectangle:hover{
+    color: orange;
+    background: white;
+    transition: all 0.3s;
+}
 #cursor{
 position: absolute;
 width: 20px;
@@ -96,27 +93,24 @@ border-radius: 50%;
 pointer-events: none;
 z-index: 1000;
 }
-
 .taal{
     position: relative;
     margin-top: 50px;
     color: white;
     margin-right: 25px;
- 
-
-}
-
+ }
 #header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 #contact{ 
     display: flex;
     margin-right: 40px;
 }
-
+.taal:hover{
+    color: orange;
+}
 .menu-btn{
     position: relative;
     display: flex;
@@ -152,7 +146,6 @@ z-index: 1000;
 .menu-btn_burger::after{
     transform: translateY(10px);
 }
-/* ANIMATION */
 .menu-btn.open .menu-btn_burger{
     transform: translateX(-50px);
     background: transparent;
@@ -174,6 +167,7 @@ nav {
     background-color: rgba(0,0,0,0.5);
     transition: 1s;
     z-index: 1;
+    font-size: 25px;
 }
 nav.zichtbaar{
     right:0;
