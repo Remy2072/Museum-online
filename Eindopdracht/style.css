@@ -20,7 +20,7 @@ body{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    overflow: hidden; 
+    /* overflow: hidden;  */
 }
 body::before {
     z-index: -1;
@@ -98,6 +98,14 @@ z-index: 1000;
     margin-top: 50px;
     color: white;
     margin-right: 25px;
+ }
+ a{
+     color: white;
+     text-decoration: none;
+ }
+
+ a:hover{
+     color: orange;
  }
 #header{
     display: flex;
