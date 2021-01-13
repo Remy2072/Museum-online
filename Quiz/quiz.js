@@ -105,6 +105,9 @@
 
   function displayResult() {
     var score = $("<p>", { id: "question" });
+    var quizdiv = $('#quiz');
+    // console.log(quizdiv)
+    
     var correct = 0;
     for (var i = 0; i < selectOptions.length; i++) {
       correct += allQuestions[i].answer[selectOptions[i]];
@@ -114,15 +117,15 @@
       "Dit kunstwerk ben jij, wil je het in het echt zien bezoek dan het Lam!"
     );
     if (correct > 0 && correct < 19) {
-      score.append('<img src="../fotos/download.jpeg" alt="download.jpeg"/>');
+      quizdiv.append('<img src="../fotos/download.jpeg" alt="download.jpeg"/>');
     }
 
     if (correct > 20 && correct < 29) {
-      score.append('<img src="../fotos/foto2.jpeg" alt="foto2.jpeg"/>');
+      quizdiv.append('<img src="../fotos/foto2.jpeg" alt="foto2.jpeg"/>');
     }
 
     if (correct === 30) {
-      score.append('<img src="../fotos/foto3.jpeg" alt="foto3.jpeg"/>');
+      quizdiv.append('<img src="../fotos/foto3.jpeg" alt="foto3.jpeg"/>');
     }
 
     return score;

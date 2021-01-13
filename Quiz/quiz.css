@@ -50,3 +50,7 @@ ul li {
 input[type="radio"] {
   cursor: pointer;
 }
+
+#quiz{
+  text-align: center;
+}
