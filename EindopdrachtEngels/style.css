@@ -210,6 +210,7 @@ nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 #click {
   display: none;
@@ -286,4 +287,65 @@ nav ul li a:hover {
   background: #e6e6e6;
   color: #2d2d2d;
   transition: 0.5s;
+}
+
+/* QUIZZZZZ */
+#container {
+  position: fixed;
+  right: 100px;
+  top: 50vh;
+  transform: translateY(-43vh);
+  width: 50%;
+  margin: 150px auto;
+  padding: 50px 30px;
+  background-color: #2d2d2d;
+  border-radius: 3px;
+  color: #fff;
+  box-shadow: 0 0 10px 0 #999;
+  /* z-index: -1; */
+}
+#container h1 {
+  text-align: center;
+}
+#container .button {
+  width: 80px;
+  height: 25px;
+  text-align: center;
+  float: right;
+  background-color: #fff;
+  margin: 0 2px 0 2px;
+  cursor: pointer;
+}
+#container .button a {
+  text-decoration: none;
+  color: #555;
+  line-height: 25px;
+}
+#container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 500px;
+}
+#container ul li {
+  background: #1b1b1b;
+  width: 200px;
+  margin: 10px;
+  padding: 5px;
+  display: inline-block;
+}
+#container #prev {
+  display: none;
+}
+#container #start {
+  display: none;
+  width: 100px;
+}
+#container input[type="radio"] {
+  cursor: pointer;
+}
+#container img{
+  width: 350px;
+  height: 200px;
+  float: right;
 }
